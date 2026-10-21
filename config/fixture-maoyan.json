@@ -1,0 +1,77 @@
+{
+  "_note": "猫眼全流程干跑 fixture。和大麦 fixture 的区别：这里显式写了行容器节点（LinearLayout），因为猫眼的'缺货'标记和'勾选框'都不在票档/姓名节点自己身上，而在同一行的兄弟节点里；快照是拍平的，只能靠 bounds 包含关系把行还原出来（core/tree.py 的 container()）。nav:true 表示'点了屏幕内容会变'——不一定是换页，也可能只是勾选态变了。",
+  "start_at": 1800000000.0,
+  "frames": [
+    {
+      "label": "DETAIL",
+      "nodes": [
+        {"text": "2026 巡回演唱会 上海站", "bounds": [60, 420, 1020, 500], "clickable": false, "nav": false},
+        {"text": "05-18 周六 19:30", "bounds": [60, 520, 700, 560], "clickable": false, "nav": false},
+        {"text": "¥580 起", "bounds": [60, 700, 400, 760], "clickable": false, "nav": false},
+        {"text": "立即预订", "bounds": [300, 2040, 780, 2160], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "PICKER",
+      "nodes": [
+        {"text": "请选择票档", "bounds": [60, 600, 500, 660], "clickable": false, "nav": false},
+
+        {"bounds": [60, 790, 1020, 930], "cls": "android.widget.LinearLayout", "clickable": false, "nav": false},
+        {"text": "看台 ¥580", "bounds": [400, 830, 700, 890], "clickable": true, "nav": false},
+
+        {"bounds": [60, 930, 1020, 1070], "cls": "android.widget.LinearLayout", "clickable": false, "nav": false},
+        {"text": "内场 ¥1280", "bounds": [400, 970, 700, 1030], "clickable": true, "nav": false},
+        {"text": "缺货", "bounds": [820, 970, 940, 1030], "clickable": false, "nav": false},
+
+        {"text": "数量", "bounds": [280, 1600, 400, 1660], "clickable": false, "nav": false},
+        {"text": "1份", "bounds": [400, 1600, 520, 1660], "clickable": false, "nav": false},
+        {"text": "+", "bounds": [560, 1590, 640, 1670], "clickable": true, "nav": false},
+
+        {"text": "确认", "bounds": [820, 2280, 1000, 2360], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "ORDER_A",
+      "nodes": [
+        {"text": "订单确认", "bounds": [60, 420, 700, 480], "clickable": false, "nav": false},
+        {"text": "看台 ¥580 × 2", "bounds": [60, 560, 700, 620], "clickable": false, "nav": false},
+
+        {"bounds": [60, 700, 1020, 820], "cls": "android.widget.LinearLayout", "clickable": false, "nav": false},
+        {"text": "wc0GRRGh2f2pQAAAABJRU5ErkJggg==", "cls": "android.widget.Image", "bounds": [90, 730, 150, 790], "clickable": true, "nav": true},
+        {"text": "张三", "bounds": [200, 730, 500, 790], "clickable": false, "nav": false},
+
+        {"bounds": [60, 840, 1020, 960], "cls": "android.widget.LinearLayout", "clickable": false, "nav": false},
+        {"text": "B85bZ04Z1b5tAAAAAElFTkSuQmCC", "cls": "android.widget.Image", "bounds": [90, 870, 150, 930], "clickable": true, "nav": false},
+        {"text": "李四", "bounds": [200, 870, 500, 930], "clickable": false, "nav": false},
+
+        {"text": "提交订单", "bounds": [700, 2200, 1000, 2300], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "ORDER_B",
+      "nodes": [
+        {"text": "订单确认", "bounds": [60, 420, 700, 480], "clickable": false, "nav": false},
+        {"text": "看台 ¥580 × 2", "bounds": [60, 560, 700, 620], "clickable": false, "nav": false},
+
+        {"bounds": [60, 700, 1020, 820], "cls": "android.widget.LinearLayout", "clickable": false, "nav": false},
+        {"text": "B85bZ04Z1b5tAAAAAElFTkSuQmCC", "cls": "android.widget.Image", "bounds": [90, 730, 150, 790], "clickable": true, "nav": false},
+        {"text": "张三", "bounds": [200, 730, 500, 790], "clickable": false, "nav": false},
+
+        {"bounds": [60, 840, 1020, 960], "cls": "android.widget.LinearLayout", "clickable": false, "nav": false},
+        {"text": "B85bZ04Z1b5tAAAAAElFTkSuQmCC", "cls": "android.widget.Image", "bounds": [90, 870, 150, 930], "clickable": true, "nav": false},
+        {"text": "李四", "bounds": [200, 870, 500, 930], "clickable": false, "nav": false},
+
+        {"text": "提交订单", "bounds": [700, 2200, 1000, 2300], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "PAY",
+      "nodes": [
+        {"text": "订单已提交，请在 15 分钟内完成支付", "bounds": [60, 400, 1020, 470], "clickable": false, "nav": false},
+        {"text": "微信支付", "bounds": [60, 1500, 700, 1560], "clickable": false, "nav": false},
+        {"text": "支付宝支付", "bounds": [60, 1620, 700, 1680], "clickable": false, "nav": false},
+        {"text": "立即支付", "cls": "android.widget.Button", "bounds": [700, 2200, 1000, 2300], "clickable": true, "nav": true}
+      ]
+    }
+  ]
+}

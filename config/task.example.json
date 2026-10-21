@@ -1,0 +1,27 @@
+{
+  "_note": "任务配置示例。sale_at 用 ISO 时间最直观，main.py 会转成 unix 秒；也可直接写 unix 秒数字。",
+  "scene": "damai",
+  "sale_at": "2026-06-01T12:00:00+08:00",
+  "lead_ms": 55,
+  "replicas": 3,
+  "device_filter": [
+    "adb"
+  ],
+  "config": {
+    "item_id": "716435462268",
+    "session": "06-01",
+    "sku": "看台580",
+    "qty": 2,
+    "viewers": [
+      "张三"
+    ],
+    "entry_xy": [
+      540,
+      2100
+    ],
+    "burst": 12,
+    "burst_gap_ms": 8,
+    "allow_fallback_sku": true,
+    "queue_retries": 6
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_note": "猫眼任务配置示例。sale_at 用 ISO 时间最直观，main.py 会转成 unix 秒；也可直接写 unix 秒数字。",
+  "scene": "maoyan",
+  "sale_at": "2026-05-18T12:00:00+08:00",
+  "lead_ms": 55,
+  "replicas": 3,
+  "device_filter": [
+    "adb"
+  ],
+  "config": {
+    "演出": "巡回演唱会 上海站",
+    "session": "05-18",
+    "price": 580,
+    "max_price": 880,
+    "qty": 2,
+    "viewers": [
+      "张三"
+    ],
+    "entry_xy": [
+      540,
+      2100
+    ],
+    "confirm_xy": [
+      878,
+      2263
+    ],
+    "burst": 12,
+    "burst_gap_ms": 8,
+    "allow_price_fallback": true,
+    "prebooked": false
+  }
+}

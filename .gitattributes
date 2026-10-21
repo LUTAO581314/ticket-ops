@@ -1,0 +1,26 @@
+# 默认按内容自动判断文本/二进制，文本一律 LF 落库
+* text=auto eol=lf
+
+# 需要保持 CRLF 的（Windows 双击脚本）—— 目前没有，留作约定
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# 明确标记，避免 Windows 上把 CRLF 提交进 diff
+*.py     text
+*.md     text
+*.json   text
+*.html   text
+*.css    text
+*.js     text
+*.gitignore   text
+*.gitattributes text
+
+# 语言统计：以下不是本项目源码，不计入 GitHub 语言占比
+refs/**            linguist-vendored
+scripts/vendor/**  linguist-vendored
+*.min.js           linguist-vendored
+*.min.css          linguist-vendored
+
+# 看板是纯静态前端资产（单文件、无构建），标 documented 让它在语言占比里
+# 与 Python 一起正常呈现，而不是被当成"生成物"
+platform/static/*.html linguist-documented

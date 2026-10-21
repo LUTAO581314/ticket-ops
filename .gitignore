@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 运行时产物：数据库、事件流、逐态截图、录屏
+# 注意 var/ 整目录排除会让 .gitkeep 也失效，所以用 var/* 保留骨架
+var/*
+!var/.gitkeep
+
+# 本地机型/账号配置（含真实观演人姓名与坐标，绝不入库）
+config/local.*.json
+config/*.local.json
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

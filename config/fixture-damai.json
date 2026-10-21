@@ -1,0 +1,62 @@
+{
+  "_note": "大麦全流程干跑 fixture。每帧=一个屏幕；节点默认点了会换页(nav:true)，标 nav:false 的是'点了只变状态不换页'（加数量、勾观演人）——真机上这两下屏幕确实不变，MockDevice 必须照这个语义走，否则状态机的分阶段逻辑测不出来。",
+  "start_at": 1800000000.0,
+  "frames": [
+    {
+      "label": "DETAIL",
+      "nodes": [
+        {"text": "2026 巡回演唱会 上海站", "bounds": [60, 420, 1020, 500], "clickable": false, "nav": false},
+        {"text": "716435462268", "bounds": [60, 520, 400, 560], "clickable": false, "nav": false},
+        {"text": "¥580 / ¥880 / ¥1280", "bounds": [60, 700, 700, 760], "clickable": false, "nav": false},
+        {"text": "立即购买", "bounds": [400, 2050, 680, 2150], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "SKU",
+      "nodes": [
+        {"text": "选择票档", "bounds": [60, 600, 400, 660], "clickable": false, "nav": false},
+        {"text": "看台580", "id": "tv_price_name", "bounds": [80, 820, 460, 900], "clickable": true, "nav": true},
+        {"text": "内场1280", "id": "tv_price_name", "bounds": [80, 940, 460, 1020], "clickable": true, "nav": true},
+        {"text": "无票", "bounds": [480, 830, 560, 880], "clickable": false, "nav": false},
+        {"text": "数量 1", "bounds": [80, 1600, 300, 1660], "clickable": false, "nav": false},
+        {"text": "确定", "bounds": [820, 2280, 1000, 2360], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "SKU2",
+      "nodes": [
+        {"text": "选择票档", "bounds": [60, 600, 400, 660], "clickable": false, "nav": false},
+        {"text": "看台580", "id": "tv_price_name", "bounds": [80, 820, 460, 900], "clickable": true, "nav": false},
+        {"text": "无票", "bounds": [480, 830, 560, 880], "clickable": false, "nav": false},
+        {"text": "数量", "bounds": [80, 1600, 300, 1660], "clickable": false, "nav": false},
+        {"text": "+", "bounds": [340, 1590, 420, 1670], "clickable": true, "nav": false},
+        {"text": "确定", "bounds": [820, 2280, 1000, 2360], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "VIEWER",
+      "nodes": [
+        {"text": "选择观演人", "bounds": [60, 600, 400, 660], "clickable": false, "nav": false},
+        {"text": "张三", "bounds": [80, 820, 460, 900], "clickable": true, "nav": false},
+        {"text": "李四", "bounds": [80, 940, 460, 1020], "clickable": true, "nav": false},
+        {"text": "确定", "bounds": [820, 2280, 1000, 2360], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "SUBMIT",
+      "nodes": [
+        {"text": "确认订单", "bounds": [60, 500, 400, 560], "clickable": false, "nav": false},
+        {"text": "看台580 × 2", "bounds": [60, 700, 600, 760], "clickable": false, "nav": false},
+        {"text": "提交订单", "bounds": [700, 2200, 1000, 2300], "clickable": true, "nav": true}
+      ]
+    },
+    {
+      "label": "PAY",
+      "nodes": [
+        {"text": "订单提交成功", "bounds": [60, 400, 700, 480], "clickable": false, "nav": false},
+        {"text": "请在 15 分钟内完成支付", "bounds": [60, 900, 900, 960], "clickable": false, "nav": false},
+        {"text": "去支付", "bounds": [700, 2200, 1000, 2300], "clickable": true, "nav": true}
+      ]
+    }
+  ]
+}
